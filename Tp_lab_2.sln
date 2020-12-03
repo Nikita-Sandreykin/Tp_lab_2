@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP_server2", "PP_server2\PP_server2.csproj", "{57554440-7EE7-4D7F-B4BF-3A57EC861629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tp_server2", "PP_server2\Tp_server2.csproj", "{57554440-7EE7-4D7F-B4BF-3A57EC861629}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tp_client2", "Tp_client2\Tp_client2.csproj", "{019226C4-33ED-4688-A370-B930F5D51D88}"
 EndProject
