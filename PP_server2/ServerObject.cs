@@ -11,8 +11,8 @@ namespace PP_server2
     public class ServerObject
     {
         static TcpListener tcpListener; // сервер для прослушивания
-        List<ClientObject> clients = new List<ClientObject>(); // все подключения
-
+        internal List<ClientObject> clients = new List<ClientObject>(); // все подключения
+        internal Data data = new Data();
         protected internal void AddConnection(ClientObject clientObject)
         {
             if (Program.ClientsCount < 4)
@@ -20,7 +20,6 @@ namespace PP_server2
                 clients.Add(clientObject);
                 Program.ClientsCount++;
             }
-            
         }
         protected internal void RemoveConnection(string id)
         {

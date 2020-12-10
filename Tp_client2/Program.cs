@@ -82,11 +82,15 @@ namespace Tp_client2
                     //Console.WriteLine(message);
                     IncomingMessage get = JsonConvert.DeserializeObject<IncomingMessage>(message);
                     active = get.active;
+                    if(active && !get.final)
+                    {
+                        Console.WriteLine("Ваша очередь!");
+                    }
                     //Console.WriteLine(get.PoemString);//вывод сообщения
                     Console.WriteLine(get.PoemString);//вывод сообщения
                     if (get.final)
                     {
-                        Disconnect();
+                        //Disconnect();
                         Console.WriteLine("Игра завершена"); //соединение было прервано
                         break;
                     }
